@@ -88,22 +88,26 @@ const typeDefs = gql`
   type Query {
     hello: String
     products: [Product!]!
+    product(id: ID!): Product
   }
   type Product {
     name: String!
     description: String!
     quantity: Int!
+    image: String!
     price: Float!
     onSale: Boolean!
   }
 `
 const resolvers = {
   Query: {
-    hello: () => {
-      return 'World!!!'
-    },
-    products: () => {
-      return products;
+    hello: () => 'World!!!',
+    products: () => products,
+    product: (parent, args, context) => {
+      const productId = args.id;
+      const product = products.find(product => product.id === productId)
+      if (!product) return null;
+      return product;
     }
   }
 }
