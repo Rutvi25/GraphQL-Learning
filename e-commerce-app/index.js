@@ -124,11 +124,12 @@ const typeDefs = gql`
     image: String!
     price: Float!
     onSale: Boolean!
+    category: Category
   }
   type Category {
     id: ID!
     name: String!
-    product: [Product!]!
+    products: [Product!]!
   }
 `
 
@@ -145,14 +146,21 @@ const resolvers = {
     category: (parent, args, context) => {
       const { id } = args
       return categories.find((category) => category.id === id);
-    }
-  }
+    },
+  },
   Category: {
     products: (parent, args, context) => {
-
-    }
+      const categoryId = parent.id;
+      return products.filter((product) => product.categoryId === categoryId)
+    },
+  },
+  Product: {
+    category: (parent, args, context) => {
+      const categoryId = parent.categoryId;
+      return categories.find(category => category.id === categoryId)
+    },
   }
-}
+};
 
 const server = new ApolloServer({
   typeDefs,
