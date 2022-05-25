@@ -2,7 +2,7 @@ const { ApolloServer, gql } = require('apollo-server');
 
 const typeDefs = gql `
   type Query {
-    hello: String!
+    hello: [String!]!
     numberOfAnimals: Int
     price: Float
     isCool: Boolean
@@ -11,7 +11,7 @@ const typeDefs = gql `
 const resolvers = {
   Query: {
     hello: () => {
-      return 'World!!!'
+      return ['hello', 'World!!!']
     },
     numberOfAnimals: () => {
       return 55;
