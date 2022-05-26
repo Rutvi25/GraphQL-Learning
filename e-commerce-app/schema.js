@@ -44,6 +44,7 @@ exports.typeDefs = gql`
     addProduct(input: AddProductInput!): Product!
     addReview(input: addReviewInput!): Review!
     deleteCategory(id: ID!): Boolean!
+    deleteProduct(id: ID!): Boolean!
   }
 
   input AddCategoryInput {

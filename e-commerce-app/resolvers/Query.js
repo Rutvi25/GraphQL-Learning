@@ -4,7 +4,8 @@ exports.Query = {
   hello: (parent, args, { products }) => 'World!!!',
   products: (parent, { filter }, { db }) => {
     let filteredProducts = db.products;
-    console.log(filteredProducts)
+    console.log(db.reviews)
+    // console.log(filteredProducts)
     if(filter) {
       const { onSale, avgRating } = filter
       if(onSale) {
