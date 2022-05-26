@@ -61,5 +61,9 @@ exports.Mutation = {
     db.products = db.products.filter((product) => product.id !== id);
     db.reviews = db.reviews.filter((review) => review.productId !== id);
     return true
+  },
+  deleteReview: (parent, { id }, { db }) => {
+    db.reviews = db.reviews.filter((review) => review.productId !== id); 
+    return true
   }
 };
