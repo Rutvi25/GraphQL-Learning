@@ -1,6 +1,6 @@
-const { ApolloServer } = require("apollo-server");
+const { ApolloServer, gql } = require("apollo-server");
 
-exports.typeDefs = gql`
+const typeDefs = gql`
   type Query {
     cars: [Car!]!
   }
