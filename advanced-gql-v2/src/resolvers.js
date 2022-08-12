@@ -55,7 +55,7 @@ module.exports = {
     signup(_, { input }, { models, createToken }) {
       const existing = models.User.findOne({ email: input.email });
       if (existing) {
-        throw new AuthenticationError('nope');
+        throw new AuthenticationError('invalid');
       }
       const user = models.User.createOne({
         ...input,
@@ -74,7 +74,7 @@ module.exports = {
     signin(_, { input }, { models, createToken }) {
       const user = models.User.findOne(input);
       if (!user) {
-        throw new AuthenticationError('nope');
+        throw new AuthenticationError('invalid email or password!');
       }
       const token = createToken(user);
       return { token, user };
@@ -88,7 +88,7 @@ module.exports = {
   User: {
     posts(root, _, { user, models }) {
       if (root.id !== user.id) {
-        throw new AuthenticationError('nope');
+        throw new AuthenticationError('not yours!');
       }
       return models.Post.findMany({ author: root.id });
     },

@@ -15,16 +15,16 @@ const getUserFromToken = (token) => {
   }
 };
 const authenticated = (next) => (root, args, context, info) => {
-  if(!context.user) {
-    throw new Error('not authorized!')
+  if (!context.user) {
+    throw new AuthenticationError('not authenticated!');
   }
   return next(root, args, context, info);
 };
 const authorized = (role, next) => (root, args, context, info) => {
-  if(context.user.role !== role) {
-    throw new Error(`must be ${role}`)
+  if (context.user.role !== role) {
+    throw new AuthenticationError('Incorrect role!');
   }
-  return next(root, args, context, info)
+  return next(root, args, context, info);
 };
 module.exports = {
   getUserFromToken,

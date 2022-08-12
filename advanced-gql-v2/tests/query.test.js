@@ -1,5 +1,10 @@
 const gql = require('graphql-tag');
+const graphql = require('graphql');
+
 const createTestServer = require('./helper');
+const typedefs = require('../src/typedefs');
+const resolvers = require('../src/resolvers');
+
 const FEED = gql`
   {
     feed {
