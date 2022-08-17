@@ -53,6 +53,15 @@
       "avatar": "http",
       "createdAt": 1660106202109,
       "id": "NEuG9Rc4O5w0MvbdQoL0l"
+    },
+    {
+      "email": "admin1@code.com",
+      "password": "password",
+      "role": "ADMIN",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1660652599860,
+      "id": "OULQ92xfDxT-JvLNstXhf"
     }
   ],
   "posts": [
@@ -115,6 +124,14 @@
       "pushNotifications": true,
       "createdAt": 1660106202110,
       "id": "5hnh_cooqhPP8WHmDcr_z"
+    },
+    {
+      "user": "OULQ92xfDxT-JvLNstXhf",
+      "theme": "DARK",
+      "emailNotifications": true,
+      "pushNotifications": true,
+      "createdAt": 1660652599863,
+      "id": "0ku8pfEa-srrjS47ne2Iq"
     }
   ]
 }
