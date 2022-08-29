@@ -1,0 +1,137 @@
+{
+  "users": [
+    {
+      "email": "member@member.com",
+      "password": "password",
+      "role": "ADMIN",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1571213104370,
+      "id": "Z2hlvDmLOSRZGebC_Z_aA"
+    },
+    {
+      "email": "master@code.com",
+      "password": "password",
+      "role": "ADMIN",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1660027539059,
+      "id": "SqlPnxSV66-7d3TJi7oV0"
+    },
+    {
+      "email": "master1@code.com",
+      "password": "password",
+      "role": "ADMIN",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1660027706421,
+      "id": "nMmrfM5AHYCb2QV58Y1oS"
+    },
+    {
+      "email": "master2@code.com",
+      "password": "password",
+      "role": "ADMIN",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1660028143524,
+      "id": "S1tvv92oLC58G58UDoB2X"
+    },
+    {
+      "email": "member@code.com",
+      "password": "password",
+      "role": "MEMBER",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1660035881534,
+      "id": "16f84Kvn7Vgz6so0e0vbq"
+    },
+    {
+      "email": "admin@code.com",
+      "password": "password",
+      "role": "ADMIN",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1660106202109,
+      "id": "NEuG9Rc4O5w0MvbdQoL0l"
+    },
+    {
+      "email": "admin1@code.com",
+      "password": "password",
+      "role": "ADMIN",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1660652599860,
+      "id": "OULQ92xfDxT-JvLNstXhf"
+    }
+  ],
+  "posts": [
+    {
+      "message": "Hello world!!!",
+      "author": "NEuG9Rc4O5w0MvbdQoL0l",
+      "createdAt": 1660106513361,
+      "id": "lXI5RGifFztgNCSLfwLac"
+    },
+    {
+      "message": "Hello world!!!",
+      "author": "NEuG9Rc4O5w0MvbdQoL0l",
+      "createdAt": 1660106610184,
+      "id": "EX_kQ7GBtFJNYpUpbOCDR"
+    },
+    {
+      "message": "Hello world",
+      "author": "NEuG9Rc4O5w0MvbdQoL0l",
+      "createdAt": 1660106617690,
+      "id": "xXUaL7e9KXhP2c8o1EqCR"
+    }
+  ],
+  "settings": [
+    {
+      "user": "SqlPnxSV66-7d3TJi7oV0",
+      "theme": "DARK",
+      "emailNotifications": true,
+      "pushNotifications": true,
+      "createdAt": 1660027539061,
+      "id": "jwfGZ7ItYPsKz8jALPsGR"
+    },
+    {
+      "user": "nMmrfM5AHYCb2QV58Y1oS",
+      "theme": "DARK",
+      "emailNotifications": true,
+      "pushNotifications": true,
+      "createdAt": 1660027706427,
+      "id": "hW7_nBk-Ba_P63l3gPId7"
+    },
+    {
+      "user": "S1tvv92oLC58G58UDoB2X",
+      "theme": "DARK",
+      "emailNotifications": true,
+      "pushNotifications": true,
+      "createdAt": 1660028143526,
+      "id": "AGQ8HDbsKOYP7-U-YHWX3"
+    },
+    {
+      "user": "16f84Kvn7Vgz6so0e0vbq",
+      "theme": "DARK",
+      "emailNotifications": true,
+      "pushNotifications": true,
+      "createdAt": 1660035881537,
+      "id": "4Q3M8ccm6MjCrIWbP0RbC"
+    },
+    {
+      "user": "NEuG9Rc4O5w0MvbdQoL0l",
+      "theme": "DARK",
+      "emailNotifications": true,
+      "pushNotifications": true,
+      "createdAt": 1660106202110,
+      "id": "5hnh_cooqhPP8WHmDcr_z"
+    },
+    {
+      "user": "OULQ92xfDxT-JvLNstXhf",
+      "theme": "DARK",
+      "emailNotifications": true,
+      "pushNotifications": true,
+      "createdAt": 1660652599863,
+      "id": "0ku8pfEa-srrjS47ne2Iq"
+    }
+  ]
+}
